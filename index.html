@@ -31,12 +31,41 @@
   .color{
     background-color: orange;
   }
+  .skip{
+    padding:5px;
+  }
 
+  
+  .heading{
+font-style: normal;
+font-weight: 400;
+font-size:15pt;
+width:90%;
+height:100px;
+margin-left:3%;
+margin-right:3%;
+border-style:solid;
+position:fixed;
+text-align:center; 
+padding:1% 1% 5% 15%;
+background-color:orange;
+border-radius:15px;
+}
+  
 </style>
 
 <title> Andre Wong's Portfolio Webpage </title>
 
+<div class="container-fluid">
+  <div class="row heading">
+    <a href="#About" style="color:black">
+      <div class="col-xs-3 skip">About</div></a>
+    <a href="#Portfolio" style="color:black"><div class="col-xs-3 skip">Portfolio</div></a>
+<a href="#Contact" style="color:black"><div class="col-xs-3 skip">Contact</div></a>
+  </div>
+  
 <h1 class="portfolio">About Andre Wong</h1>
+  <a name="About"></a>
 <div class="row" style="margin-right:5%">
   <div class="boxing">
     <div class="box">
@@ -46,6 +75,7 @@
   </div>
 </div>
 <h1 class="portfolio">Portfolio</h1>
+  <a name="Portfolio"></a>
 <div class="boxing color newbox">
   <p align="center">Connect4 on LAN written in Python
   </p>
@@ -54,6 +84,7 @@
   <img align="center" src="ebook.png">
 </div>
 <h1 class="portfolio">Contact</h1>
+  <a name="Contact"></a>
 <div class="boxing">
 <h1 class="portfolio">awong21@citymail.cuny.edu</h1></div>
 
