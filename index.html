@@ -6,25 +6,21 @@
     margin: auto;
     width: 70%;
   }
-  
+
+  .indent{
+    text-indent:50px;
+  }
+
   .boxing{
-    border-style: solid;
+    margin:auto;
     border-color: black;
     border-width: 5px;
-  }
-  
-  .box{
-    margin: auto;
-    padding:5% 10% 30% 5%;
     font-size:20px;
-  }
-  
-  .newbox{
-    margin: auto;
-    padding: 0% 0% 10% 0%;
+    padding:5% 10% 5% 5%;
   }
 
   h1 {
+    height:100px;
     text-align:center;
     font-family: Monospace;
   }
@@ -34,27 +30,28 @@
   .skip{
     padding:5px;
   }
+  .sizing{
+    width: 50%;
+    height: auto;
+  }
 
-  
   .heading{
 font-style: normal;
 font-weight: 400;
-font-size:15pt;
+font-size:20pt;
 width:90%;
 height:100px;
 margin-left:3%;
 margin-right:3%;
 border-style:solid;
 position:fixed;
-text-align:center; 
+text-align:center;
 padding:1% 1% 5% 15%;
 background-color:orange;
 border-radius:15px;
 }
-  
-</style>
 
-<title> Andre Wong's Portfolio Webpage </title>
+</style>
 
 <div class="container-fluid">
   <div class="row heading">
@@ -63,28 +60,25 @@ border-radius:15px;
     <a href="#Portfolio" style="color:black"><div class="col-xs-3 skip">Portfolio</div></a>
 <a href="#Contact" style="color:black"><div class="col-xs-3 skip">Contact</div></a>
   </div>
-  
+
+  <div class="row" style="margin-top:10%">
+    <a name="About"></a>
 <h1 class="portfolio">About Andre Wong</h1>
-  <a name="About"></a>
-<div class="row" style="margin-right:5%">
   <div class="boxing">
-    <div class="box">
-      <img align="left"src="andre.png">
-<p align="left">I am Andre Wong, 23 years old. I am currently a senior in City College of New York, working on my Computer Science Bachelor's Degree. As for career, my goal is to become a game designer/programmer mainly for mobile and PC platforms.</p>
-    </div>
-  </div>
+<div class="row" style="margin-right:5%">
+      <img class="sizing" align="left"src="andre.png">
+<p align="left" class="indent">I am Andre Wong, 23 years old. I am currently a senior in City College of New York, working on my Computer Science Bachelor's Degree. As for career, my goal is to become a game designer/programmer mainly for mobile and PC platforms.</p>
 </div>
+    <a name="Portfolio"></a>
 <h1 class="portfolio">Portfolio</h1>
-  <a name="Portfolio"></a>
-<div class="boxing color newbox">
+<div class="color">
   <p align="center">Connect4 on LAN written in Python
   </p>
-  <img align="center" src="connect.png">
+  <center><img class="sizing" align="center" src="connect.png">
   <p align="center">Ebook Library System written in Python</p>
-  <img align="center" src="ebook.png">
-</div>
-<h1 class="portfolio">Contact</h1>
-  <a name="Contact"></a>
-<div class="boxing">
-<h1 class="portfolio">awong21@citymail.cuny.edu</h1></div>
+  <img class="sizing" align="center" src="ebook.png">
+    </div></center>
 
+    <a name="Contact"></a>
+<h1 class="portfolio">Contact</h1>
+    <h1 align="center" class="portfolio">awong21@citymail.cuny.edu</h1></div></div>
